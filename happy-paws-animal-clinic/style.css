@@ -279,10 +279,10 @@ p {
 
 .services-img {
   border-radius: 50px;
-  max-height: 50vh;
-  box-shadow: 0 0 20px 10px rgba(9, 124, 173, 0.5); /* Subtle shadow for a cute effect */
-  padding: 10px; /* Padding inside the border */
-  background-color: #fff; /* White background inside the border */
+  max-height: 35vh;
+  box-shadow: 0 0 20px 10px rgba(9, 124, 173, 0.5);
+  padding: 10px;
+  background-color: #fff;
 }
 
 .services-text {
