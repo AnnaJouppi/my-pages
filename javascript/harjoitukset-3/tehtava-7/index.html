@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 7 Library</title>
+</head>
+
+<body>
+  <script>
+    class Book {
+      constructor(name, author, publisher, year) {
+        this.name = name;
+        this.author = author;
+        this.publisher = publisher;
+        this.year = year;
+      }
+
+      toString() {
+        return `book: ${this.name}, ${this.author}, ${this.publisher}, ${this.year}.`;
+      }
+
+    }
+
+    class Library {
+      constructor() {
+        this.books = [];
+      }
+
+      addBook(book) {
+        this.books.push(book);
+        console.log(`A new book is added to library: ${book.name}`);
+      }
+      printBooks() {
+        console.log(`Library has following books:`);
+        this.books.forEach(book => {
+          console.log(book.toString());
+
+        }); // forEachin loppu
+      }
+    }
+
+    let book1 = new Book("Javascript Bible", "Danny Goodman", "John Wiley & Sons", "1998");
+    let book2 = new Book("Javascript Bible", "Danny Goodman", "John Wiley & Sons", "1998");
+    let book3 = new Book("Javascript Bible", "Danny Goodman", "John Wiley & Sons", "1998");
+
+    let library = new Library();
+
+    library.addBook(book1);
+    library.addBook(book2);
+    library.addBook(book3);
+
+    library.printBooks();
+  </script>
+
+</body>
+
+</html>

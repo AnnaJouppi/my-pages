@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 7</title>
+</head>
+
+<body>
+  <script>
+    function karkausvuosi(year) {
+      if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        return true;
+      } else {
+        return false;
+      }
+
+    }
+    const year = 1992;
+    karkausvuosi(year)
+
+    if (karkausvuosi(year)) {
+      console.log(`${year} on karkausvuosi.`)
+    } else {
+      console.log(`${year} ei ole karkausvuosi.`)
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 6</title>
+</head>
+
+<body>
+  <script>
+    function minmax(array) {
+      const lowest = Math.min(...array);
+      const biggest = Math.max(...array);
+      const sum = array.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+      const average = sum / array.length;
+      console.log(`Lowest: ${lowest}.`)
+      console.log(`Highest: ${biggest}.`)
+      console.log(`Sum: ${sum}.`)
+      console.log(`Average: ${average}.`)
+    }
+    const numbers = [3, 62, 76, 10, 8, 9, 35, 78];
+    minmax(numbers);
+
+  </script>
+</body>
+
+</html>

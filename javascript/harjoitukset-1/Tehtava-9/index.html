@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 9</title>
+</head>
+
+<body>
+  <script>
+    function lueNimi() {
+      const namesArray = [];
+      let askName = prompt('What is your name?')
+
+      while (askName !== '') {
+        // Tallennetaan nimet taulukkoon
+        namesArray.push(askName);
+        askName = prompt('What is your name?')
+
+      }
+      // Tulostetaan nimet järjestyksessä
+      console.log(`You provided the following names:`);
+      for (const name of namesArray) {
+        console.log(name);
+      }
+      // Tulostetaan nimet aakkosjärjestyksessä
+      console.log(`Names in alphabetical order:`);
+      let sortedNames = namesArray.slice().sort();
+
+      for (const name of sortedNames) {
+        console.log(name);
+      }
+    }
+    lueNimi();
+  </script>
+
+</body>
+
+</html>

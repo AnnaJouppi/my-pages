@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 8</title>
+</head>
+
+<body>
+  <script>
+    function palindromi(sentence) {
+      const check = sentence.split('').reverse().join('');
+      if (sentence === check) {
+        console.log(`${sentence} is a palindrome!`);
+      }
+      else {
+        console.log(`${sentence} is not a palindrome!`)
+      }
+    }
+
+    const sentence = `saikauppias`;
+    palindromi(sentence);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 10</title>
+</head>
+
+<body>
+  <script>
+    function askpoints() {
+      const pointsArray = [];
+      for (i = 0; i <= 4; i++) {
+        // Kysytään pisteet
+        let pointsPrompt = prompt(`Tuomari ${i + 1}, anna pisteesi:`);
+        pointsArray.push(pointsPrompt);
+        console.log(`Lisätyt pisteet: ${pointsPrompt}`);
+      }
+      // Tulostetaan kaikki annetut pisteet ja suuruusjärjestyksessä olevat pisteet
+      console.log(`Annetut pisteet: ${pointsArray}.`);
+      let sortedPoints = pointsArray.slice().sort((a, b) => a - b);
+      console.log(`Pisteet suuruusjärjestyksessä: ${sortedPoints}.`)
+    }
+    askpoints();
+  </script>
+
+</body>
+
+</html>

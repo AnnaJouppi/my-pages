@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 2</title>
+</head>
+
+<body>
+  <script>
+    let person1 = {
+      name: "Matti Mainio",
+      age: 120
+    }
+    let person2 = {
+      name: "Kirsi Kernell",
+      age: 30
+    }
+
+    if (person1.age > person2.age) {
+      let line = `${person1.name} is ${person1.age - person2.age} years older than ${person2.name}.`;
+      console.log(line);
+    }
+    if (person1.age < person2.age) {
+      let line = `${person2.name} is ${person2.age - person1.age} years older than ${person1.name}.`;
+      console.log(line);
+    }
+
+
+
+  </script>
+
+</body>
+
+</html>

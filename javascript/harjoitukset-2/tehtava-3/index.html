@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+    <p>Syötä ALViton hinta: <input id="price" type="number" name="price"></p>
+    <button id="general-alv" onclick="laskeALV(price.value, value=0.255)" >Laske Yleinen ALV (25,5 %)</button>
+    <button id="food-alv" onclick="laskeALV(price.value, value=0.14)">Laske elintarvikeALV (14 %)</button>
+    <button id="medicine-alv" onclick="laskeALV(price.value, value=0.10)">Laske lääkeALV (10 %)</button>
+
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>

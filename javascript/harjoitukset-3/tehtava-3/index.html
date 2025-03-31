@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 1</title>
+</head>
+
+<body>
+  <script>
+    const person = {
+      firstName: "Kirsi",
+      lastName: "Kernell",
+      age: 30,
+      address: {
+        street: "Piippukatu 2",
+        city: "Jyväskylä",
+        zipCode: "40100"
+      }
+    }
+
+    for (const [key, value] of Object.entries(person)) {
+      if (value instanceof Object) {
+        // plarataan sisempi objekti
+
+        for (const [key_inner, value_inner] of Object.entries(value)) {
+          console.log(`${key_inner}: ${value_inner}`)
+        }
+      }
+      else {
+        console.log(`${key}: ${value}`)
+      }
+    }
+
+  </script>
+</body>
+
+</html>
