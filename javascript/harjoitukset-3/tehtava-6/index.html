@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 5</title>
+</head>
+
+<body>
+  <script>
+    function Person(name, age, phone, email) {
+      this.name = name;
+      this.age = age;
+      this.phone = phone;
+      this.email = email;
+      this.addAge = function () {
+        this.age += 1;
+      };
+    }
+    const person1 = new Person("Anna", 41, "123456", "anna.jouppi@something.com");
+    console.log(`Name: ${person1.name}, Age: ${person1.age}, Phone: ${person1.phone}, Email: ${person1.email}`);
+    person1.addAge();
+    console.log(`Age: ${person1.age}`);
+    const person2 = new Person("Ari", 46, "1543322", "ari.jouppi@something.com");
+    console.log(`Name: ${person2.name}, Age: ${person2.age}, Phone: ${person2.phone}, Email: ${person2.email}`);
+    person2.addAge();
+    console.log(`Age: ${person2.age}`);
+    const person3 = new Person("Sirpa", 79, "442244", "sirpa.jouppi@something.com");
+    console.log(`Name: ${person3.name}, Age: ${person3.age}, Phone: ${person3.phone}, Email: ${person3.email}`);
+    person3.addAge();
+    console.log(`Age: ${person3.age}`);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Tehtävä 8</title>
+</head>
+
+<body>
+  <div class="box" >
+  <h3>Vauhtilaskin</h3>
+  <form id=f>
+    <table>
+    <tbody>
+       <tr><td>Tunnit: </td><td><input type="number" id="n1" placeholder="1" value="1"></td></tr>
+       <tr><td>Minuutit: </td><td><input type="number" id="n2"  placeholder="20" value="20"></td></tr>
+       <tr><td>Sekunnit: </td><td><input type="number" id="n3"  placeholder="0" value="0"></td></tr>
+       <tr><td>Kilometrit:</td><td><input type="number" id="n4"  placeholder="0" value="10"></td></tr>
+    </tbody>
+    </table>
+    <button type="button" onclick="calcKmhPace()">Laske kmh-vauhti</button>
+    </form>
+    <div id="results"></div>
+    </div>
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>

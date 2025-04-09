@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehtävä 4</title>
+</head>
+
+<body>
+  <script>
+    const fruits = {
+      apple: 3,
+      banana: 5,
+      orange: 2,
+      grape: 1
+    }
+
+    const totalFruits = Object.values(fruits).reduce((sum, count) => sum + count, 0);
+
+    console.log(`Fruits count is: ${totalFruits}`);
+  </script>
+</body>
+
+</html>

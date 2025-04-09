@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.container {
+  border: 2px solid #000;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+#status-text {
+  border: #000 solid 2px;
+  height: 30px;
+  margin-top: 0;
+  
+}
+
+#info-text {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Button panel */
+.elevator-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.circle-btn {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #000;
+  border-radius: 50%;     
+  background: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s;
+}
+
+/* Hover effect */
+.circle-btn:hover {
+  background: #f1f1f1;
+}
+
+
+/* .go-btn {
+  background: red;
+  color: #fff;
+}
+
+
+.go-btn:hover {
+  background: #cc0000;
+} */
