@@ -1,0 +1,9 @@
+img {
+    width: 500px;
+    padding: 20px;
+}
+
+span {
+    font-weight: bold;
+    cursor: pointer;
+}
