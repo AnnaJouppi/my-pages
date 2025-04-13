@@ -1,0 +1,11 @@
+
+#container {
+    position: relative;
+
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    will-change: transform;
+}

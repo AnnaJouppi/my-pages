@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+    <div class="container">
+    <p>Valitse juhlaväri:</p>
+    <select id="colorSelect" onchange="changeColor()">
+        <option value="yellow">Keltainen</option>
+        <option value="pink">Vaaleanpunainen</option>
+        <option value="green">Vihreä</option>
+        <option value="purple">Violetti</option>
+        </select>
+
+    <p>Mikä juhla?</p> <input type="text" id="party"><br>
+    
+    <button  onclick="changeBgColor()" type="button" >Vaihda valittu taustaväri</button>
+        <div id="resultarea">
+            <p>Tulosalue</p>
+    <div id="colorcode"></div>
+    <div id="chosenparty"></div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
