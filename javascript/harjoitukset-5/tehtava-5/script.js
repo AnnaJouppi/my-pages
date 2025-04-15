@@ -32,12 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 }
 
                 resultItems[currentIndex].classList.add("highlight");
-
-                // Debugging: Log the current index and result items
-                console.log("Current Index:", currentIndex);
-                console.log("Result Items:", resultItems);
-
-                return; // Exit early to avoid clearing results
+                return;
             }
         }
 
@@ -51,6 +46,12 @@ document.addEventListener("DOMContentLoaded", async () => {
                 resultsDiv.innerHTML = ""; // Tyhjää tulosalue
                 currentIndex = -1;
             }
+        }
+            // Tyhjää tulosalue ja hakukenttä jos painetaan Esciä
+        if (event.key === "Escape") {
+            resultsDiv.innerHTML = ""; 
+            searchInput.value = "";
+            currentIndex = -1;
         }
 
         // Tyhjää tulosalue
