@@ -1,0 +1,24 @@
+.harjoitukset-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between tables */
+  justify-content: space-between; /* Adjust alignment */
+}
+
+.harjoitukset {
+  flex: 1 1 calc(33.333% - 30px); /* Adjust width for 3 columns */
+  box-sizing: border-box;
+}
+
+.harjoitukset table {
+  width: 100%; /* Ensure tables take full width of their container */
+  border-collapse: collapse;
+}
+
+.harjoitukset h2, .harjoitukset p {
+  margin: 0 0 10px;
+}
+
+td {
+    width: 10px;
+}
